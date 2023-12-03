@@ -1,2 +1,0 @@
-# hackathon
-BMS challenge
