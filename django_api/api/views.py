@@ -89,6 +89,7 @@ def create_ecg_plot(request):
         # Update the ImageField of the model instance
         img = models.ImageEcg.objects.get(pk=1)
         img.image.save('ecg_plot.png', content_file)
+        plt.close()
         return Response()
     return Response({"Error":"No data were provided"},status=400)
 
